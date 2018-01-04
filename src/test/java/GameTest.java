@@ -40,4 +40,12 @@ public class GameTest {
         assertEquals(2, player.hand.countCardsInHand());
     }
 
+    @Test
+    public void canGetTotalOfEachPlayerHand(){
+        game.setupGame(1, player, 2);
+        game.deal();
+//        assertEquals(12, game.findTotalOfHand(player));
+        assertNotNull(game.findTotalOfHand(player));
+    }
+
 }

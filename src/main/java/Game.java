@@ -39,8 +39,21 @@ public class Game {
         }
     }
 
-    public void findTotalOfHand(){
-        
+    public int findTotalOfHand(Player player){
+        player.hand.addToTotal();
+        return player.hand.getHandTotal();
     }
 
+    public void compareHands(){
+        int number = 1;
+        ArrayList<Player> winner = new ArrayList<>();
+        do {
+            if (this.findTotalOfHand(players.get(number)) == this.findTotalOfHand(players.get(number += 1))) {
+                number++;
+            }
+            else (this.findTotalOfHand(players.get(number)) > this.findTotalOfHand(players.get(number += 1))) ?
+                winner.add(players.get(number)) :  winner.add(players.get(number += 1));
+                number++;}
+        while (number != numberOfPlayers);
+    }
 }

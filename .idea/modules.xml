@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HighLowGame.iml" filepath="$PROJECT_DIR$/.idea/modules/HighLowGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HighLowGame_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HighLowGame_main.iml" group="HighLowGame" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HighLowGame_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HighLowGame_test.iml" group="HighLowGame" />
+    </modules>
+  </component>
+</project>
